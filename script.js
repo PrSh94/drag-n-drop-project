@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       div.appendChild(img);
 
       //Complete the function here
+      
     };
   }
 

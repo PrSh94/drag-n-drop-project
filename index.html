@@ -14,13 +14,27 @@
         <div class="carousel-items">
             <!-- Define you carousel here -->
             <p> Upload Your Image </p>
+            <div class="DND">
+                <label for="fileInput"> Drag n Drop</label>
+                <br>
+                <input type="file" id="fileInput" accept="image/*" />
+                <button id="uploadButton">Upload</button>
+            </div>
         </div>
-    </div>
+
 
     <div class="app-container">
 
-        <!-- Define your rest of the things of the Image TODO List app here -->
         
+        <!-- Define your rest of the things of the Image TODO List app here -->
+        <img src="/assets/carousel1.jpg" alt=" img" id="img-src">
+        <textarea name="detail" id="image-detail"></textarea>
+        <div class="accept">
+        <i class="fa-regular fa-circle-check"></i>
+        </div>
+        <div class="reject">
+        <i class="fa-regular fa-circle-xmark"></i>
+        </div>
         </div>
 
         <div class="file-list" id="fileList">
@@ -30,6 +44,7 @@
         
     </div>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/048bbd020c.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
