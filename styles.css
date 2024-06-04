@@ -41,13 +41,14 @@ body{
 .carousel{
    border: 1px solid black;
    width: 700px;
-   height: 400px;
+   height: 700px;
    display: flex;
    flex-direction: column;
    align-items: center;
    background-color: antiquewhite;
    opacity: 95%;
    border-radius: 15px;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .carousel-items{
@@ -62,7 +63,10 @@ body{
   margin-top: 45px;
 }
 
-.DND{
+
+/* dropzone css */
+
+.dropzone{
     width: 60%;
     height: 60%;
     margin-top: 35px;
@@ -70,39 +74,67 @@ body{
     background-color: white;
     border-radius: 15px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px dotted rgba(245, 118, 6, 0.922);
+    border: 4px dotted rgba(245, 118, 6, 0.922);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.dropzone label{
+  font-size: x-large;
+}
+
+.dropzone input{
+  /* margin-left: 20%; */
+  /* border: 0.5px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: larger;
+  padding: 25px;
 }
 
 
-/* app container */
 
-.app-container{
-    width: 90%;
-    height: 100px;
-    background-color: grey;
-    border-radius: 15px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+/* file list css */
+
+
+.file-list {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-.app-container img{
-    border-radius: 55%;
-    width: 10%;
-    height: 55%;
+.file-name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.app-container textarea{
-    width: 70%;
+.thumbnail {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 55%;
 }
 
-.app-container i{
-    font-size: xx-large;
+textarea {
+  flex: 1;
+  resize: vertical;
+  width: 500px;
 }
 
-.app-container i:hover{
-    color: rgb(208, 104, 13);
-    cursor: pointer;
+.icons {
+  cursor: pointer;
+  background-color: black;
+  color: aliceblue;
+  border-radius: 55%;
+  font-size: larger;
+  margin: 5px;
+}
+
+.icons:hover {
+  background-color: rgb(208, 104, 13);
 }
